@@ -5,10 +5,9 @@
   "author": "Ashish",
   "license": "MIT",
   "scripts": {
-    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "build": "webpack --watch",
+    "build": "webpack",
     "serve": "live-server public/",
-    "start": "live-server public"
+    "dev-server": "webpack-dev-server"
   },
   "dependencies": {
     "babel-cli": "6.24.1",
@@ -19,6 +18,7 @@
     "live-server": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
