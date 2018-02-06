@@ -4,8 +4,8 @@ const Action = (props) => {
     return (
         <div>
             <button 
-                disabled= {!props.hasOptions}
-                onClick = {props.handlePick}
+                disabled={!props.hasOptions}
+                onClick ={props.handlePick}
             >
                 What should I do?
             </button>
