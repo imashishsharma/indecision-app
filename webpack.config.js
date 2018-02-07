@@ -24,7 +24,8 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         port: process.env.PORT || 8080,
-        host: '0.0.0.0'
+        host: '0.0.0.0',
+        disableHostCheck: true
     }
 };
 
