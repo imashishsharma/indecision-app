@@ -1,5 +1,7 @@
 const path = require('path');
 
+const host = 'rocky-tundra-41702.herokuapp.com';
+
 module.exports = {
     entry: './src/app.js',
     output: {
@@ -24,7 +26,7 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'public'),
         port: process.env.PORT || 8080,
-        host: '0.0.0.0'
+        host
     }
 };
 
